@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>news websit</title>
+    <link rel="stylesheet" href="news.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="main-nav container flex">
+        <a href="#" onclick="reload()">
+          <img src="logo.jpg" class="logo" />
+        </a>
+        <div class="nav-links">
+          <ul class="flex">
+            <li class="hoverlink optionn" id="ipl" onclick="navigation('ipl')">
+              IPL
+            </li>
+            <li
+              class="hoverlink optionn"
+              id="finance"
+              onclick="navigation('finance')"
+            >
+              Finance
+            </li>
+            <li
+              class="hoverlink optionn"
+              id="technology"
+              onclick="navigation('technology')"
+            >
+              Technology
+            </li>
+          </ul>
+        </div>
+        <div class="searchbar">
+          <input
+            id="search-text"
+            type="text"
+            class="what-to-search"
+            placeholder="e.g. Technology"
+          />
+          <button id="search-button" class="search">Search</button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="cards-container flex container" id="maincontainer"></div>
+      <!-- Use <template> to hold some content that will be hidden when the page loads. Use JavaScript to display it: -->
+      <template id="templatenews">
+        <div class="cards">
+          <div class="card-header">
+            <img
+              src="https://via.placeholder.com/400x200"
+              alt="news-image"
+              id="news-image"
+            />
+          </div>
+          <div class="content">
+            <h3 class="newstitle" id="newstitle">This is the title</h3>
+            <h5 class="news-source" id="news-source">date</h5>
+            <p class="news-desc" id="news-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci
+              modi impedit dolore dolorem eligendi at perferendis voluptatibus
+              qui aspernatur inventore ut, quos iusto rem error facere
+              voluptatum voluptatem molestias cumque
+            </p>
+          </div>
+        </div>
+      </template>
+    </main>
+
+    <script src="news.js"></script>
+  </body>
+</html>

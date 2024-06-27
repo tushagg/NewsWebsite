@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: border-box;
+}
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: antiquewhite;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+/* flex and container ko ham utility class bana rha hai */
+.flex {
+  display: flex;
+
+  align-items: center;
+}
+.container {
+  margin-inline: auto;
+  overflow: hidden;
+}
+nav {
+  background-color: rgb(1, 25, 54);
+  color: antiquewhite;
+  box-shadow: 0px 0px 4px rgb(1, 25, 54);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.logo {
+  width: 60px;
+  height: 60px;
+}
+.main-nav {
+  padding: 8px 0px;
+  justify-content: space-around;
+  /* padding m (top bottom)( left right) */
+}
+.nav-links ul {
+  gap: 16px;
+}
+.hoverlink {
+  cursor: pointer;
+}
+.hoverlink:hover {
+  color: rgb(242, 209, 201);
+}
+/* active ka matlab click karne par property chanage hona */
+
+.hoverlink:active {
+  color: rgb(237, 37, 78);
+}
+.optionn.active {
+  color: rgb(237, 37, 78);
+}
+
+.searchbar {
+  height: 40px;
+  gap: 8px;
+}
+
+.what-to-search {
+  background-color: rgb(242, 209, 201);
+  height: 100%;
+  width: 200px;
+  border: none;
+  border-radius: 4px;
+  padding-inline: 12px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  outline: none;
+}
+.search {
+  background-color: rgb(1, 25, 54);
+  height: 100%;
+  border: 2px solid rgb(242, 209, 201);
+  border-radius: 4px;
+  width: 80px;
+  color: rgb(242, 209, 201);
+  padding: 8px 20px;
+  cursor: pointer;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.search:hover {
+  font-size: 1.001rem;
+}
+main {
+  color: black;
+  padding-block: 20px;
+  margin-top: 100px;
+}
+.cards-container {
+  margin-left: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: start;
+  row-gap: 20px;
+}
+.cards {
+  width: 360px;
+  min-height: 400px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgb(242, 209, 201);
+  cursor: pointer;
+  overflow: hidden;
+  background-color: rgb(242, 209, 201);
+  transition: all 0.3s ease;
+}
+.cards:hover {
+  box-shadow: 1px 1px 5px rgb(242, 209, 201);
+  background-color: rgb(245, 199, 188);
+  transform: translateY(-2px);
+}
+.card-header img {
+  width: 100%;
+  height: 200px;
+  /* background-size: cover; */
+  object-fit: cover;
+  /* read about background size vs object fit */
+}
+.content {
+  padding: 12px;
+}
+.news-source {
+  margin-block: 12px;
+}
